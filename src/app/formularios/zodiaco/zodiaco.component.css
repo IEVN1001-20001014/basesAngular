@@ -1,0 +1,126 @@
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 40px;
+  }
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(41, 17, 128, 0.1);
+    width: 45%;
+  }
+  
+.resultado {
+    width: 45%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+
+div {
+    margin-bottom: 100px;
+  }
+
+h1 {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'ADELIA', sans-serif;
+    color: #8b2222;
+  }
+  
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #8b2222;
+  }
+  
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+  }
+  
+button {
+    display: block;
+    width: 100%;
+    background-color: #af4c4c;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+button:hover {
+    background-color: #701717;
+  }
+  
+h3 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+img {
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+    height: auto;
+    border-radius: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+body {
+    background-color: #e9ecef;
+    font-family: 'Arial', sans-serif;
+  }
+  
+form div {
+    margin-bottom: 15px;
+  }
+  
+input::placeholder {
+    font-style: italic;
+    color: #bbb;
+  }
+  
+@media (max-width: 500px) {
+    .container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    form {
+      width: 100%;
+    }
+
+    .resultado {
+      width: 100%;
+    }
+
+    input, select {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 16px;
+    }
+  }

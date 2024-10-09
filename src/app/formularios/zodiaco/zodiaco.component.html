@@ -1,0 +1,41 @@
+<div class="container">
+    
+    <form [formGroup]="formulario">
+        <h1>SIGNOS CHINOS</h1>
+      <div>
+        <label>Nombre:</label>
+        <input formControlName="nombre" type="text" placeholder="Tu nombre">
+      </div>
+      <div>
+        <label>Apellido Paterno:</label>
+        <input formControlName="apellidoPaterno" type="text" placeholder="Apellido paterno">
+      </div>
+      <div>
+        <label>Apellido Materno:</label>
+        <input formControlName="apellidoMaterno" type="text" placeholder="Apellido materno">
+      </div>
+      <div>
+        <label>Fecha de Nacimiento:</label>
+        <input formControlName="dia" type="number" placeholder="Día" min="1" max="31">
+        <input formControlName="mes" type="number" placeholder="Mes" min="1" max="12">
+        <input formControlName="anio" type="number" placeholder="Año" min="1900">
+      </div>
+      <div>
+        <label>Sexo:</label>
+        <select formControlName="sexo">
+          <option value="hombre">Hombre</option>
+          <option value="mujer">Mujer</option>
+        </select>
+      </div>
+      <button (click)="imprimirDatos()">Imprimir</button>
+    </form>
+  
+    <div class="resultado">
+        <h1>Resultado</h1>
+      <h3 [innerHTML]="resultado"></h3>
+      <div *ngIf="signoChinoUrl">
+        <img [src]="signoChinoUrl" alt="Signo Chino">
+      </div>
+    </div>
+  </div>
+  
